@@ -1,4 +1,4 @@
-Title: hello world!
+Title: Hello World!
 Date: 2015-09-11
 Category: about
 Tags: pelican, gitcafe, gitpages
@@ -18,7 +18,7 @@ print('hello world!')
 7. 一些好用的工具
 8. 感谢
 
-# 1. 注册使用gitcafe pages：
+## 1. 注册使用gitcafe pages：
 
 到`gitcafe`上申请一个账号，如：username，新建仓库：username，gitcafe就自动识别为pages项目啦~
 
@@ -34,7 +34,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 接着会提示保存的路径以及文件名，密码就留空好了，完成之后，将.pub结尾的那个公钥的内容添加到gitcafe账户中（在settings/SSH keys里面可以找到~），gitcafe pages就建立完成啦~
 
-# 2. 安装pelican
+## 2. 安装pelican
 
 Pelican是一套开源的博客生成软件，使用python编写，所以安装pelican和安装一般的python包是一样的，相信小伙伴们都有各种不同的方式安装了~
 
@@ -76,7 +76,7 @@ blog/
 ┣ publishconf.py       #发布脚本
 ```
 
-然后，到`output`文件夹下面，添加gitcafe仓库，并且设置本地git配置，git的教程大家可以看廖雪峰的博客：[廖雪峰的官方网站](http://www.liaoxuefeng.com)。
+然后，到`output`文件夹下面，添加gitcafe仓库，并且设置本地git配置，git的教程大家可以看廖雪峰的博客：[`廖雪峰的官方网站`](http://www.liaoxuefeng.com)。
 
 ```bash
 git config --local user.name 'yourname'
@@ -96,7 +96,7 @@ git push -u gitcafe gh-pages
 
 完成这些之后，就可以动手写博客啦~
 
-# 3. 第一篇文章！
+## 3. 第一篇文章！
 
 随便选择并且使用一款markdown编辑器，动手写吧~
 
@@ -145,7 +145,7 @@ gitcafe: publish
 
 `make gitcafe`
 
-# 4. 更改主题
+## 4. 更改主题
 
 可以用一些其他人已经设计好的主题，如使用pelican-bootstrap3主题等；首先需要下载主题：
 
@@ -164,7 +164,7 @@ pelican-themes -l
 
 第二条命令可以看到当前安装的主体列表，选择想要更改的主体，并且修改`pelicanconf.py`，添加`THEME = 'pelican-bootstrap3'`一行，然后重新`make html`，试试效果吧~
 
-# 5. 添加插件
+## 5. 添加插件
 
 首先还是先下载插件:
 
@@ -197,7 +197,7 @@ SITEMAP={
 
 之后再执行`make html`，通过[http://127.0.0.1:8000/sitemap.xml](http://127.0.0.1:8000/sitemap.xml)即可看到效果啦~
 
-# 6. 申请购买域名
+## 6. 申请购买域名
 
 到这里为止，博客的基本内容就完成的差不多了，但是个性化的域名还是比较重要的，到[`Godaddy`](https://www.godaddy.com)上面，注册并且申请一个域名，通过支付宝付款购买之后，就有自己的独立域名了，但是光有域名还不行，还要和空间绑定起来，这里其实就拿`gitcafe`当做空间，做一个绑定；
 
@@ -205,7 +205,7 @@ SITEMAP={
 
 回到`gitcafe`的项目管理目录，在`Pages 服务`下面，添加购买的域名，访问你购买的域名，看看是不是有效果了~
 
-# 7. 一些好用的工具
+## 7. 一些好用的工具
 
 好用的markdown编辑器：MacDown，也就是我现在正在使用的编辑器，安装非常简单：
 
@@ -217,6 +217,6 @@ brew cask install macdown
 
 国内可用的图床：`新浪微博`
 
-# 8. 感谢
+## 8. 感谢
 
-第一次搭建博客，花了整整一天时间，期间借鉴了不少前辈的经验：`lizherui,cold,poem_of_sunshine`，非常感谢~
+第一次搭建博客，花了整整一天时间，期间借鉴了不少前辈的经验`lizherui,cold,poem_of_sunshine`，非常感谢~
