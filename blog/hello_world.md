@@ -1,6 +1,6 @@
 Title: Hello World!
 Date: 2015-09-11
-Category: about
+Category: pages
 Tags: pelican, gitcafe, gitpages
 
 ```python

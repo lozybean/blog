@@ -1,6 +1,6 @@
 Title: 在pelican中使用多说
 Date: 2015-09-18
-Category: about
+Category: pages
 Tags: comment, pelican, duoshuo
 
 本文记录在pelican中实现评论系统的过程
