@@ -1,6 +1,6 @@
 Title: SGE集群流程设计
 Date: 2015-09-18
-Category: work
+Category: pages
 Tags: SGE, pipeline
 
 >由于华大基因等公司的大量使用，SGE计算集群在生物信息领域仍然有比较广泛的应用；生物大数据时代的到来，可靠、易维护的分析流程也日益重要。

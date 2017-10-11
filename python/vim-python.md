@@ -1,6 +1,6 @@
 Title: 我的vim配置
 Date: 2015-10-14
-Category: pages
+Category: Pages
 Tags: python, vim
 
 >『工欲善其事，必先利其器。』
@@ -106,7 +106,7 @@ Bundle 'gmarik/vundle'		" 类似于这样，在Bundle 后面跟需要安装的�
 
 ```vim
 " 安装使用python-syntax
-Bundle 'hdima/python-syntax'  
+Bundle 'hdima/python-syntax'
 let python_highlight_all = 1		" 所有关键词高亮
 ```
 
@@ -152,7 +152,7 @@ Bundle 'scrooloose/nerdtree'
 " <leader>o : 打开选中的文件
 " <leader>m : 根据提示新建或者删除文件
 map <leader>n :NERDTreeToggle<CR>
-let NERDTreeHighlightCursorline=1	
+let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore=['\.pyc$','\.pyo$','\.o$','\.so$','\.egg$'] " 设置需要忽略的文件
 ```
 

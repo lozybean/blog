@@ -1,6 +1,6 @@
 Title: Python的上下文管理器
 Date: 2015-10-10
-Category: pages
+Category: Learning
 Tags: python
 
 ## 首先想到的
@@ -72,7 +72,7 @@ Python中使用两个*魔术方法*来实现上下文管理：`__enter__`和`__e
 class MyRemoteConnection(RemoteConnection):
 	def __enter__(self):
 		return self
-		 
+
 	def __exit__(self, exception_type, exception_val, trace):
 		self.dispose()
 

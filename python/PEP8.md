@@ -1,6 +1,6 @@
 Title: PEP8
 Date: 2015-09-27
-Category: pages
+Category: Learning
 Tags: python, PEP8
 
 [**PEP**](https://www.python.org/dev/peps/)(Python Enhancement Proposals)，是一系列关于Python的改进建议，其中的第8篇建议，即**PEP8**（Title: Style Guide for Python Code），则是针对Python的代码编写规范提出的一些建议。本文记录一些比较个人比较在意的点。
@@ -108,9 +108,9 @@ from subprocess import Popen, PIPE
 
 ```python
 # It is a block comment.
-# 
+#
 # Something else.
-# 
+#
 # It is the end line.
 ```
 
@@ -150,7 +150,7 @@ PEP8给出了很多具体的建议，详细可以参考[官方文档](https://ww
 3. 尽量避免使用匿名函数`lambda`，而对每个函数都进行定义；
 4. 使用模块和包中的异常类，避免直接使用`Exception`；更加不要使用裸露的`except`来获取所有的异常，而应该紧跟具体的异常；`try`的中的代码应该尽量少，从而利于异常的准确定位，不要在`try`后面直接`return`一个过程,应该将计算的过程代码独立出来；
 5. 使用`raise ValueError('message')`来代替`raise ValueError,'message'`；
-6. 应该避免空的`return`，而使用`return None`；并且在分支结构中，确保每个分支都有返回值，而不应该置空一些可能不重要的分支； 
+6. 应该避免空的`return`，而使用`return None`；并且在分支结构中，确保每个分支都有返回值，而不应该置空一些可能不重要的分支；
 7. 检查对象类型时，应该使用`isinstanceof(obj,int)`，而不是`type(obj) is type(1)`，这样会造成一次额外的运算；
 8. 同样的，检查序列是否为空时，应该直接判断，如`if seq`,而不要使用`if len(seq)`先求长度；
 9. 使用内置的方法，而不是另外重新实现，如判断字符串的后缀时，应该使用`if foo.endswith('gz')`而不应该使用`if foo[:-2] == 'gz'`；

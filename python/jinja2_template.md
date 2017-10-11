@@ -1,6 +1,6 @@
 Title: Jinja2初探之模板语法
 Date: 2015-10-17
-Category: pages
+Category: Learning
 Tags: python, jinja2
 
 在使用模板之前，首先要有一个模板，最常见的就是网页模板，因为这是Jinja2的起源(我觉得在脚本生成和组织上肯定也能够有很好地应用)，详细的模板语法可以参考[模板设计者文档](http://www.pythonfan.org/docs/python/jinja2/zh/templates.html)。
@@ -164,7 +164,7 @@ jinja2中可以使用`if`和`is`进行测试，测试的含义是`if`后面的�
 ```django
 {% if value is defined %}
 # do something with value
-{% end if %}
+{% endif %}
 ```
 
 测试的作用和过滤器比较类似，但是测试决定的是**是**与**否**，而过滤器则是将一个变量通过若干的运算变成新的变量来完成格式化。
@@ -216,7 +216,7 @@ this is in big.txt
 
 模板继承指的是子模板继承基本模板的骨架，并且针对更加特殊的情况，对骨架进行填充。而需要被填充的内容，则由`block`标签定义，没有在`block`中的内容会原样复制到子模板中。
 
-如： 
+如：
 
 有一个*base.txt*模板：
 
